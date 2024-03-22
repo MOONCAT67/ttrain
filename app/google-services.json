@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "806851508493",
+    "project_id": "train-track-1e758",
+    "storage_bucket": "train-track-1e758.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806851508493:android:dffb9e626d56c799691844",
+        "android_client_info": {
+          "package_name": "com.example.train_track"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZL1eKmNOm5AREWbyzAuOZ2KV0q6XLibk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,13 +9,14 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/prof"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/pers"
+        android:scaleType="centerCrop"
         app:shapeAppearanceOverlay="@style/circ"
         app:strokeColor="@color/white"
-        android:padding="5dp"
         app:strokeWidth="1dp"
+        android:padding="-100dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +25,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.215"
         />
+
     <TextView
         android:id="@+id/piname"
         android:layout_width="wrap_content"
@@ -36,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -131,7 +133,7 @@
         app:layout_constraintHorizontal_bias="0.011"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005" />
+        app:layout_constraintVertical_bias="0.049" />
 
     <Button
         android:layout_width="280dp"

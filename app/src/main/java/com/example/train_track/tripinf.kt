@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import com.example.train_track.databinding.ActivityTripinfBinding
 
 
@@ -53,6 +54,10 @@ class tripinf : AppCompatActivity() {
             val intent = Intent(this, user_home_page::class.java)
             startActivity(intent)
     }
+
+        WindowCompat.setDecorFitsSystemWindows(window,
+            false
+        )
 
 }
 

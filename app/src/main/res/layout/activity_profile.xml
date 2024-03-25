@@ -5,52 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".user_home_page"
-    android:background="@color/orange"
+    android:background="@drawable/x"
     tools:ignore="MissingConstraints">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        android:src="@drawable/triangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:background="#000"
+        android:padding="5dp"
         android:src="@drawable/pers"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:strokeColor="@color/white"
-        android:padding="5dp"
-        app:strokeWidth="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.065"
-        app:shapeAppearanceOverlay="@style/circ" />
+        app:shapeAppearanceOverlay="@style/circ"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
 
-    <ImageView
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/cam"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:clickable="true"
-
         android:contentDescription="@string/app_name"
-        android:padding="6dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="-15dp"
+        android:backgroundTint="@color/black"
+
+
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
         app:srcCompat="@drawable/baseline_camera_alt_24"
         tools:ignore="TouchTargetSizeCheck" />
 

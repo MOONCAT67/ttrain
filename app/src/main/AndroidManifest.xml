@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Train_track"
         tools:targetApi="31">
         <activity
+            android:name=".tripinf"
+            android:exported="false" />
+        <activity
             android:name=".profile"
             android:exported="false" />
         <activity

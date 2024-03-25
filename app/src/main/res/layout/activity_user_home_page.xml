@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingRight="0dp"
         android:src="@drawable/triangle"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -32,6 +33,7 @@
         app:srcCompat="@drawable/train" />
 
     <ImageView
+        android:id="@+id/bell"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:contentDescription="TODO"
@@ -59,5 +61,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.038" />
+
+    <EditText
+        android:id="@+id/tex"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg"
+        android:hint="from ?"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315"></EditText>
+
+    <EditText
+        android:id="@+id/tex2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg"
+        android:hint="to ?"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315"></EditText>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="#BBB4B4"
+        android:paddingLeft="-15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803"
+        tools:listitem="@layout/single_item" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

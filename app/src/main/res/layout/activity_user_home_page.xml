@@ -5,22 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".user_home_page"
-    android:background="@color/orange"
+    android:background="@drawable/x"
     tools:ignore="MissingConstraints">
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingRight="0dp"
-        android:src="@drawable/triangle"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:contentDescription="TODO" />
     <ImageView
         android:id="@+id/train"
         android:layout_width="150dp"
@@ -36,12 +22,11 @@
         android:id="@+id/bell"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginStart="344dp"
         android:contentDescription="TODO"
         android:padding="8dp"
         android:src="@drawable/notification"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.038" />
@@ -57,10 +42,10 @@
         android:src="@drawable/person"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintHorizontal_bias="0.952"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.111" />
 
     <EditText
         android:id="@+id/tex"
@@ -74,7 +59,7 @@
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315"></EditText>
+        app:layout_constraintVertical_bias="0.274"></EditText>
 
     <EditText
         android:id="@+id/tex2"
@@ -85,24 +70,72 @@
         android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="0.838"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315"></EditText>
+        app:layout_constraintVertical_bias="0.274"></EditText>
+
+    <!-- Bottom Navigation View -->
+
 
     <ListView
         android:id="@+id/list"
         android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:background="#BBB4B4"
+        android:layout_height="380dp"
+        android:background="@drawable/bg"
         android:paddingLeft="-15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803"
+        app:layout_constraintVertical_bias="0.72"
         tools:listitem="@layout/single_item" />
 
 
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949">
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:padding="10dp"
+            android:background="@drawable/bg2"
+            android:src="@drawable/baseline_home_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.401"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.949" />
+
+        <ImageView
+            android:layout_marginStart="35dp"
+
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:padding="10dp"
+            android:src="@drawable/loc2"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.949" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

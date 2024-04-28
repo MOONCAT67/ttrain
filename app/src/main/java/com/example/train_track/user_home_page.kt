@@ -13,8 +13,18 @@ class user_home_page : AppCompatActivity() {
     private lateinit var binding: ActivityUserHomePageBinding
     private lateinit var triparraylist : ArrayList<Trip>
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
+
+
+
+
+
         binding = ActivityUserHomePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

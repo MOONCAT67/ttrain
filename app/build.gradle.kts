@@ -54,8 +54,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.github.dhaval2404:imagepicker:2.1")
     implementation ("com.google.android.material:material:1.2.0")
-    implementation ("androidx.navigation:navigation-fragment-ktx:2.3.5")
-    implementation ("androidx.navigation:navigation-ui-ktx:2.3.5")
+
 
 
 

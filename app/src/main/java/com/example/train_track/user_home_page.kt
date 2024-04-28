@@ -22,9 +22,6 @@ class user_home_page : AppCompatActivity() {
 
 
 
-
-
-
         binding = ActivityUserHomePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -116,6 +113,12 @@ class user_home_page : AppCompatActivity() {
         prof.setOnClickListener {
             // Handle click event
             val intent = Intent(this@user_home_page, profile::class.java)
+            startActivity(intent)
+        }
+        val loc = findViewById<ImageView>(R.id.kk)
+        loc.setOnClickListener {
+            // Handle click event
+            val intent = Intent(this@user_home_page, locations::class.java)
             startActivity(intent)
         }
 

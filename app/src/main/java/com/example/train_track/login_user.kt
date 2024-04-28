@@ -19,6 +19,7 @@ class login_user : AppCompatActivity() {
         )
 
         var btn=findViewById<Button>(R.id.rod)
+        var btnreg=findViewById<Button>(R.id.reg)
 
         var log: EditText=findViewById(R.id.login)
 
@@ -44,6 +45,10 @@ class login_user : AppCompatActivity() {
                         alertDialog.show()
 
                 }
+        }
+        btnreg.setOnClickListener {
+            val intent = Intent(this, inscription::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -10,6 +10,7 @@
 
     <LinearLayout
 
+        android:id="@+id/linearLayout"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="@drawable/bg1"
@@ -22,9 +23,9 @@
 
         <ImageView
             android:id="@+id/ll"
-            android:layout_marginStart="20dp"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_marginStart="20dp"
 
             android:padding="10dp"
             android:src="@drawable/home2"
@@ -37,10 +38,10 @@
 
         <ImageView
             android:id="@+id/kk"
-            android:layout_marginStart="35dp"
-
             android:layout_width="60dp"
+
             android:layout_height="60dp"
+            android:layout_marginStart="35dp"
             android:background="@drawable/bg2"
             android:padding="10dp"
             android:src="@drawable/loc1"
@@ -52,6 +53,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.949" />
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:scaleY="4"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
